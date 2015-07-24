@@ -1,0 +1,40 @@
+/* CSS Document */
+
+body{
+	font-family: sans-serif;
+} 
+
+h1 {
+	text-align: center;
+}
+
+form {
+		border: 1px dotted #333333;
+		padding: 10px;
+}
+
+form input[type="text"], input[type="number"], input[placeholder="*"] {
+	background-color: #fba191;
+	border: 0;
+	padding: 3px;
+} 
+
+form input[name="lastname"] {
+	font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+	color: white;
+}
+
+form select {
+	background-color: #fdb17f;
+
+
+}
+
+form input[type="submit"] {
+	border: 0;
+	background-color: #ffac0b;
+	padding: 5px;
+}

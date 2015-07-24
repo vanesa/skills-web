@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Application Form</title>
+<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+<style>
+	h1 {
+		padding-bottom: 20px;
+	}
+	form input {
+		margin-bottom: 15px;
+	}
+</style>
+</head>
+
+<body>
+	<h1>Fill out the job application!</h1>
+    <form action="/application" method="POST" id="applicationform">
+    <label>Please write your name:</label>
+    <input type="text" name="firstname" placeholder="First name"> 
+    <input type="text" name="lastname" placeholder="Last name">
+    <br/>
+    <label>Please write your salary requirement:</label>
+    <input type="number" name="salary" placeholder="Salary requirement">
+    <br/>
+    <label>Please select what job you're applying for:</label>
+    <select name="jobselection">
+    	<option name="jobselection" value="software engineer">Software Engineer
+        <option name="jobselection" value="qa engineer">QA Engineer
+        <option name="jobselection" value="product manager">Product Manager
+    </select>
+    <br> <br>
+    <span style="background-color: #ffac0b;"><input type="submit"></span>
+    </form>
+</body>
+</html>
